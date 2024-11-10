@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#999999"
+    android:backgroundTint="#FFFFFF"
+    android:foregroundTint="#5E5E5E"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:visibility="visible">
+
+    <!-- Input for specifying the number of fields -->
+    <EditText
+        android:id="@+id/et_number_of_fields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter number of Courses"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btn_generate_fields"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate Fields" />
+
+    <!-- Container where dynamic fields will be added -->
+    <LinearLayout
+        android:id="@+id/container_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="16dp" />
+
+    <Button
+        android:id="@+id/btn_calculate_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate Sum"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text=""
+        android:textSize="18sp" />
+</LinearLayout>
